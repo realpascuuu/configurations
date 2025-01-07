@@ -7,6 +7,10 @@
   "workbench.editor.showTabs": "single",
   "workbench.settings.editor": "json",
 
+  "oneDarkPro.vivid": true,
+  "oneDarkPro.italic": true,
+  "oneDarkPro.bold": true,
+
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": true,
   "zenMode.hideStatusBar": false,
@@ -14,7 +18,7 @@
   "zenMode.hideActivityBar": false,
   "zenMode.showTabs": "single",
 
-  "cSpell.userWords": ["Hasklug"],
+  "cSpell.userWords": ["Hasklug", "Shapefile"],
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "material-icon-theme",
 
@@ -28,13 +32,14 @@
     "tsconfig.json": "tsconfig*.json",
     "main.ts": "main.ts, index.html",
     "*rc.json": "${capture}rc.json, ${capture}ignore",
-    "*.component.ts": "${capture}.component.html, ${capture}.component.spec.ts, ${capture}.routes.ts",
-    "*.service.ts": "${capture}.service.spec.ts",
+    "*.component.ts": "${capture}.component.html, ${capture}.component.spec.ts, ${capture}.routes.ts, ${capture}*.config.ts",
     "*-state.service.ts": "${capture}-state.service.ts, ${capture}-state.config.ts, ${capture}-state.interface.ts, ${capture}-state.service.spec.ts, index.ts",
-    "*-api.service.ts": "${capture}-api.service.ts, ${capture}-api-facade.service.ts, ${capture}-api-offline.service.ts, ${capture}-api.service.spec.ts",
+    "*-api.service.ts": "${capture}-api-*.service.ts, ${capture}-api*.service.spec.ts",
+    "*.service.ts": "${capture}.service.spec.ts",
     "*.pipe.ts": "${capture}.pipe.spec.ts",
     "*.directive.ts": "${capture}.directive.spec.ts",
     "*.interceptor.ts": "${capture}.interceptor.spec.ts",
+    "*.resolver.ts": "${capture}.resolver.spec.ts",
     "*.guard.ts": "${capture}.guard.spec.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
     "package.json": "*.code-workspace, .browserslist*, .circleci*, .commitlint*, .cz-config.js, .czrc, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitmojirc.json, .gitpod*, .huskyrc*, .jslint*, .knip.*, .lintstagedrc*, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .pylintrc, .release-please*.json, .releaserc*, .ruff.toml, .sentry*, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, Procfile, apollo.config.*, appveyor*, azure-pipelines*, biome.json*, bower.json, build.config.*, bun.lockb, bunfig.toml, commitlint*, crowdin*, dangerfile*, dlint.json, dprint.json*, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, knip.*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, npm-shrinkwrap.json, nx.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rollup.config.*, rspack*, ruff.toml, simple-git-hooks*, sonar-project.properties, stylelint*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, wrangler.toml, xo.config.*, yarn*"
@@ -45,5 +50,32 @@
 
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
-  "terminal.integrated.env.linux": {}
+
+  "terminal.integrated.env.linux": {},
+
+  "editor.minimap.enabled": false,
+
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.autofetchPeriod": 70,
+
+  "explorer.compactFolders": false,
+  "gitlens.views.searchAndCompare.files.layout": "list",
+
+  "editor.wordWrap": "on",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "gitlens.views.scm.grouped.views": {
+    "commits": false,
+    "branches": true,
+    "remotes": true,
+    "stashes": true,
+    "tags": true,
+    "worktrees": true,
+    "contributors": true,
+    "repositories": false,
+    "searchAndCompare": true,
+    "launchpad": false
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
